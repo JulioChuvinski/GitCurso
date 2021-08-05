@@ -1,10 +1,4 @@
-create table pessoas (
-id int not null identity,
-nome varchar(50) not null,
-nascimento date,
-sexo varchar(1) not null check (sexo IN('M','F')),
-peso decimal(5,2),
-altura decimal(3,2),
-nacionalidade varchar(20) default 'Brasil',
-primary key (id)
-);
+insert into pessoas
+(nome, nascimento, sexo, peso, altura, nacionalidade)
+values
+('Davi', '2019-02-24', 'M', '14', '0.50', 'espanha');
